@@ -1,29 +1,29 @@
 import React from 'react'
 import { useRoutes } from 'react-router-dom'
 import Navigation from './components/Navigation'
-import ViewCars from './pages/ViewCars'
-import EditCar from './pages/EditCar'
-import CreateCar from './pages/CreateCar'
-import CarDetails from './pages/CarDetails'
+import ViewDessertBoxes from './pages/ViewDessertBoxes'
+import EditDessertBox from './pages/EditDessertBox'
+import CreateDessertBox from './pages/CreateDessertBox'
+import DessertBoxDetails from './pages/DessertBoxDetails'
 import './App.css'
 
 const App = () => {
   let element = useRoutes([
     {
       path: '/',
-      element: <CreateCar title='BOLT BUCKET | Customize' />
+      element: <CreateDessertBox title='Sweet Creations | Create Box' />
     },
     {
-      path:'/customcars',
-      element: <ViewCars title='BOLT BUCKET | Custom Cars' />
+      path:'/dessert-boxes',
+      element: <ViewDessertBoxes title='Sweet Creations | View Boxes' />
     },
     {
-      path: '/customcars/:id',
-      element: <CarDetails title='BOLT BUCKET | View' />
+      path: '/dessert-boxes/:id',
+      element: <DessertBoxDetails title='Sweet Creations | Box Details' />
     },
     {
       path: '/edit/:id',
-      element: <EditCar title='BOLT BUCKET | Edit' />
+      element: <EditDessertBox title='Sweet Creations | Edit Box' />
     }
   ])
 

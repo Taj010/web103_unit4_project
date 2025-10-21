@@ -1,12 +1,220 @@
 .app {
-    background: url('./assets/background.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e3f2fd 100%);
     background-attachment: fixed;
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     overflow-y: scroll;
     overflow-x: hidden;
     padding-bottom: 50px;
+    font-family: 'Georgia', 'Times New Roman', serif;
+}
+
+/* Newspaper-style typography */
+.newspaper-heading {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    font-weight: bold;
+    color: #1565c0;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+.newspaper-subheading {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    color: #1976d2;
+    font-style: italic;
+}
+
+/* Card styling with newspaper aesthetic */
+.dessert-card {
+    background: white;
+    border: 2px solid #e3f2fd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(21, 101, 192, 0.1);
+    padding: 20px;
+    margin: 15px;
+    transition: all 0.3s ease;
+}
+
+.dessert-card:hover {
+    box-shadow: 0 6px 12px rgba(21, 101, 192, 0.15);
+    transform: translateY(-2px);
+}
+
+/* Form styling */
+.dessert-form {
+    background: white;
+    border: 2px solid #e3f2fd;
+    border-radius: 8px;
+    padding: 30px;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(21, 101, 192, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-label {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    font-weight: bold;
+    color: #1565c0;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.form-select, .form-input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #e3f2fd;
+    border-radius: 4px;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.form-select:focus, .form-input:focus {
+    outline: none;
+    border-color: #1976d2;
+    box-shadow: 0 0 0 3px rgba(25, 118, 210, 0.1);
+}
+
+/* Button styling */
+.btn-primary {
+    background: linear-gradient(135deg, #1976d2 0%, #1565c0 100%);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 4px;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(21, 101, 192, 0.2);
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #1565c0 0%, #0d47a1 100%);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(21, 101, 192, 0.3);
+}
+
+.btn-secondary {
+    background: white;
+    color: #1976d2;
+    border: 2px solid #1976d2;
+    padding: 10px 22px;
+    border-radius: 4px;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background: #1976d2;
+    color: white;
+}
+
+/* Price display */
+.price-display {
+    background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+    border: 2px solid #1976d2;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Georgia', 'Times New Roman', serif;
+    font-weight: bold;
+    color: #1565c0;
+    box-shadow: 0 2px 4px rgba(21, 101, 192, 0.1);
+}
+
+.price-amount {
+    font-size: 24px;
+    color: #0d47a1;
+}
+
+/* Preview panel */
+.preview-panel {
+    background: white;
+    border: 2px solid #e3f2fd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(21, 101, 192, 0.1);
+    min-height: 300px;
+}
+
+.preview-title {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    color: #1565c0;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Grid layout */
+.dessert-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Navigation styling */
+.nav-container {
+    background: white;
+    border-bottom: 3px solid #1976d2;
+    box-shadow: 0 2px 4px rgba(21, 101, 192, 0.1);
+    padding: 15px 0;
+}
+
+.nav-link {
+    color: #1565c0;
+    text-decoration: none;
+    font-family: 'Georgia', 'Times New Roman', serif;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    background: #e3f2fd;
+    color: #0d47a1;
+}
+
+/* Error and success messages */
+.error-message {
+    background: #ffebee;
+    border: 2px solid #f44336;
+    color: #c62828;
+    padding: 15px;
+    border-radius: 4px;
+    margin: 10px 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.success-message {
+    background: #e8f5e8;
+    border: 2px solid #4caf50;
+    color: #2e7d32;
+    padding: 15px;
+    border-radius: 4px;
+    margin: 10px 0;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Loading spinner */
+.loading-spinner {
+    border: 4px solid #e3f2fd;
+    border-top: 4px solid #1976d2;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+    margin: 20px auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }
