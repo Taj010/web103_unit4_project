@@ -39,9 +39,9 @@ The following **additional** features are implemented:
 ## Video Walkthrough
 
 <div>
-    <a href="https://www.loom.com/share/dd2e4640c4d44530b7189e7cae86f853">
+    <a href="https://www.loom.com/share/d5d5b16b04dd4fa8bc19b78d7ff96ee9">
     </a>
-    <a href="https://www.loom.com/share/dd2e4640c4d44530b7189e7cae86f853">
-      <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/dd2e4640c4d44530b7189e7cae86f853-320c77517ed16ea7-full-play.gif">
+    <a href="https://www.loom.com/share/d5d5b16b04dd4fa8bc19b78d7ff96ee9">
+      <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/d5d5b16b04dd4fa8bc19b78d7ff96ee9-e64c558e8917d23b-full-play.gif">
     </a>
   </div>
