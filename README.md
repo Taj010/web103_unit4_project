@@ -38,6 +38,11 @@ The following **additional** features are implemented:
 
 ## Video Walkthrough
 
+https://imgur.com/a/ipXsGnJ
+
+(Please try the link above first as for some reason in the video the dropdown of items to choose customizations is not visible)
+
+
 <div>
     <a href="https://www.loom.com/share/d5d5b16b04dd4fa8bc19b78d7ff96ee9">
     </a>
